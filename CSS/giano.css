@@ -1,0 +1,282 @@
+@charset "utf-8";
+html, body { height: 100%; margin: 0; }
+  body {
+    background: #728972; 
+    color: black;
+    font-family: "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+a {
+    color: #728972;
+    text-decoration: underline;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+}
+
+   
+.responsive-img2 {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+figure {
+    background-color: white;
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 200px;
+    float:right;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 8px;
+    line-height: 1.2;
+}
+
+header {
+  background-color: #728972;
+  padding: 0px;
+  text-align: center;
+}
+
+footer {
+  background-color: #728972;
+  padding: 10px;
+  text-align: center;
+  color: white;  
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+div.flex-container {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 0px 20px;
+}
+
+div.flex-container > div {
+  margin: 10px;
+}
+
+@media screen and (max-width:600px) {
+  div.flex-container {
+    flex-direction: column;
+}
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #728972;
+    padding: 0px 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.nav-left {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-btn {
+    color: white;
+    text-decoration: none;
+    padding: 16px 16px;
+    background-color: #728972;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    line-height: 1; 
+}
+
+.nav-btn:hover {
+    background-color: #3d1a28;
+    cursor: pointer;
+}
+
+.nav-btn.dropbtn {
+    background-color: #728972; /* Remove default black background */
+    font-size: 16px;              /* Match nav font size */
+    border: none;                 /* Remove button border */
+    cursor: pointer;              /* Pointer on hover */
+    padding: 16px 16px;           /* Similar spacing to other nav buttons */
+    text-align: center;
+}
+.nav-btn.dropbtn:hover {
+    background-color: #3d1a28;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;    
+    background-color: #3d1a28;
+    min-width: 120px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #728972;
+}
+
+/* Desktop hover for dropdown */
+@media screen and (min-width: 601px) {
+    .dropdown:hover .dropdown-content {
+        max-height: 500px; /* Enough to show all links */
+    }
+}
+
+/* =====================
+   Burger Icon
+===================== */
+.icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: white;
+    transition: 0.4s;
+}
+
+/* Animate burger to X when menu is open */
+.icon.change .bar1 {
+    transform: rotate(-45deg) translate(-12px, 6px);
+}
+
+.icon.change .bar2 {
+    opacity: 0;
+}
+
+.icon.change .bar3 {
+    transform: rotate(45deg) translate(-12px, -6px);
+}
+
+/* =====================
+   Responsive Mobile Styles
+===================== */
+@media screen and (max-width: 600px) {
+    /* Hide nav items by default */
+    .nav-left {
+        display: none;
+        flex-direction: column;
+        width: 75%;
+    }
+
+    /* Show nav items when responsive class added */
+    .nav-left.responsive {
+        display: flex;
+    }
+
+    /* Nav buttons full width, aligned left */
+    .nav-btn {
+        text-align: left;
+        border-top: 1px solid #444;
+    }
+
+    /* Language dropdown for mobile */
+    .dropdown-content {
+        position: relative;
+        max-height: 0;
+        border-top: 1px solid #444;
+    }
+
+    .dropdown-content.show {
+        max-height: 300px; /* Smooth slide down */
+    }
+
+    /* Show burger icon */
+    .icon {
+        display: flex;
+    }
+}
+* {
+  box-sizing: border-box;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
