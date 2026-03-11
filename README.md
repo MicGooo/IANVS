@@ -1,1 +1,1 @@
-Generation on a small static website for a Olive Oil producer in Umbria: IANVS
+Generation of a small static website for an Olive Oil producer in Umbria: IANVS
