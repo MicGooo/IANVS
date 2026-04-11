@@ -1,0 +1,188 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="../image/favicon.ico" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../CSS/giano.css">
+    <link rel="stylesheet" href="../CSS/player.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Azienda Agricola IANVS</title>
+</head>
+<body>
+<header>
+  <img src="../image/Logo New 2025.jpg"  alt="Seggiano" class="responsive-img" />
+</header>
+<div class="container">
+<div class="flex-container">
+<div>
+    <h2>Produzione di vino</h2>
+   <div class="imgbox">
+    <img src="../Image/EU_Emblem.png" alt="Giano 2010">
+    <span class="imglegend">
+        Museo ristrutturato con co-finanziamento Progetto PNRR 
+        <a href="https://commission.europa.eu/strategy-and-policy/recovery-plan-europe_it" target="_blank">
+            Next Generation EU
+        </a>, ID 9007.
+    </span>
+</div><p>La viticoltura in Italia è una delle attività agricole più antiche e prestigiose, parte integrante dell’identità culturale del Paese. Il clima vario, i terreni diversificati e le innumerevoli varietà di uva hanno reso l’Italia una delle prime potenze mondiali nella produzione di vino. Dai pendii delle Alpi fino alle coste della Sicilia, ogni zona offre condizioni uniche che danno vita a vini dalle caratteristiche inconfondibili.</p>
+<p>La coltivazione della vite inizia in primavera, quando i viticoltori guidano la crescita dei tralci e selezionano i germogli migliori. Durante l’estate, le piante vengono monitorate con attenzione per garantire una corretta maturazione degli acini. Fattori come l’esposizione al sole, la ventilazione e la composizione del terreno influenzano in modo determinante il profilo aromatico del vino.</p>
+<p>La vendemmia è un momento molto atteso, spesso celebrato come una festa comunitaria. Avviene generalmente tra agosto e ottobre, a seconda della varietà e della zona. La raccolta può essere manuale, ideale per preservare la qualità dei grappoli destinati ai vini più pregiati, oppure meccanica nelle produzioni più estese. La scelta del momento esatto della vendemmia è cruciale: zuccheri, acidità e aromi devono essere in perfetto equilibrio.</p>
+<p>Una volta raccolte, le uve vengono portate in cantina. Qui inizia la vinificazione: gli acini vengono pigiati e il mosto viene fatto fermentare. Per i vini rossi, le bucce rimangono a contatto con il succo per trasferire colore e tannini; per i bianchi, si separano subito. La fermentazione può avvenire in vasche d’acciaio, in cemento o in botti di legno, ognuno dei quali dona caratteristiche diverse al vino.</p>
+<p>Il processo prosegue con l’affinamento, durante il quale il vino evolve, maturando aromi più complessi. Alcuni vini riposano pochi mesi, altri anni interi, specialmente quelli destinati alle denominazioni più importanti. Alla fine, il vino viene filtrato, imbottigliato e preparato per essere gustato.</p>
+<p>La produzione vinicola italiana è incredibilmente varia: dalle bollicine fresche del Prosecco ai rossi corposi come il Barolo o il Brunello, fino ai profumati bianchi del Trentino e del Friuli. Ogni vino racconta la storia della sua terra, del clima e delle mani che lo hanno coltivato.</p>
+
+<!-- audio player -->
+</div>
+</div>
+<div class="flex-container">
+
+    <div class="center-wrapper">
+<div class="player1">
+<h2>Percorso didattico ricreativo:<br>dall’uva al vino</h2>
+    <!-- TRACK LIST -->
+    <div id="trackList">
+        <div class="track" data-src="../audio/2_Pigiatura.mp3">1. Pigiatura <span class="material-icons">music_note</span></div>
+        <div class="track" data-src="../audio/3_Fermentazione in bianco.mp3">2. Fermentazione in bianco<span class="material-icons">music_note</span></div>
+        <div class="track" data-src="../audio/4_Fermentazione in rosso.mp3">3. Fermentazione in rosso <span class="material-icons">music_note</span></div>
+        <div class="track" data-src="../audio/5_Torchiatura.mp3">4. Torchiatura<span class="material-icons">music_note</span></div>
+        <div class="track" data-src="../audio/6_Maturazione.mp3">5. Maturazione<span class="material-icons">music_note</span></div>
+    </div>
+
+    <!-- PLAYER SECTION -->
+    <div class="player">
+        <div class="controls">
+            <span class="material-icons" id="rewind">fast_rewind</span>
+            <span class="material-icons" id="playPause">play_arrow</span>
+            <span class="material-icons" id="forward">fast_forward</span>
+        </div>
+
+        <div class="progress-container" id="progressContainer">
+            <div class="progress1" id="progress"></div>
+        </div>
+
+        <div class="time">
+            <span id="currentTime">0:00</span>
+            <span id="duration">0:00</span>
+        </div>
+
+        <div class="volume">
+            <span class="material-icons">volume_up</span>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+        </div>
+    </div>
+    <audio id="audio"></audio>
+
+    
+</div>
+</div>
+</div>
+
+</div>
+
+<footer>
+<h3>Azienda Agricola IANVS <br>Seggiano di Giano dell'Umbria, Perugia</h3>
+<img src="../image/IANVS white logo.png" alt="AI IANVS logo" height="100px" />
+<p><img src="../image/MailW.png" alt="Mail" height="16px"/> Azienda Agricola IANVS<br>Largo S. Di Giacomo 11<br>06100 Perugia</p>
+<p><img src="../image/PhoneW.png" alt="Phone" height="16px"/> +39 075 31654</p>
+<p><img src="../image/EmailW.png" alt="E-mail" height="16px"/> ianvs@registerpec.it</p>
+<img src="../image/IANVS Coin w.png" alt="AI IANVS logo" height="150px" />
+<p>Copyright 2010-2025 | <a style="color: white" href="../Privacy/Index.html">Privacy Policy</a> | Updated: <span id="lastModified"></span></p>
+</footer>
+<script src="../CSS/main.js"></script>
+<script>
+const audio = document.getElementById("audio");
+const tracks = document.querySelectorAll(".track");
+const playPauseBtn = document.getElementById("playPause");
+const rewindBtn = document.getElementById("rewind");
+const forwardBtn = document.getElementById("forward");
+const progress = document.getElementById("progress");
+const progressContainer = document.getElementById("progressContainer");
+const currentTimeEl = document.getElementById("currentTime");
+const durationEl = document.getElementById("duration");
+const volumeSlider = document.getElementById("volume");
+
+let currentTrack = null;
+
+/* Format time  00:00  */
+function formatTime(sec) {
+    const m = Math.floor(sec / 60) || 0;
+    const s = Math.floor(sec % 60) || 0;
+    return `${m}:${s.toString().padStart(2, '0')}`;
+}
+
+/* Play / pause */
+function togglePlay() {
+    if (audio.paused) {
+        audio.play();
+        playPauseBtn.textContent = "pause";
+    } else {
+        audio.pause();
+        playPauseBtn.textContent = "play_arrow";
+    }
+}
+
+/* Track selection */
+tracks.forEach(track => {
+    track.addEventListener("click", () => {
+
+        if (currentTrack === track) {
+            togglePlay();
+            return;
+        }
+
+        if (currentTrack) currentTrack.classList.remove("active");
+
+        currentTrack = track;
+        track.classList.add("active");
+
+        audio.src = track.dataset.src;
+        audio.play();
+        playPauseBtn.textContent = "pause";
+    });
+});
+
+/* Update progress bar */
+audio.addEventListener("timeupdate", () => {
+    const percent = (audio.currentTime / audio.duration) * 100;
+    progress.style.width = percent + "%";
+    currentTimeEl.textContent = formatTime(audio.currentTime);
+});
+
+/* Set duration */
+audio.addEventListener("loadedmetadata", () => {
+    durationEl.textContent = formatTime(audio.duration);
+});
+
+/* Seek */
+progressContainer.addEventListener("click", (e) => {
+    const width = progressContainer.clientWidth;
+    const clickX = e.offsetX;
+    const ratio = clickX / width;
+    audio.currentTime = ratio * audio.duration;
+});
+
+/* Rewind 10 sec */
+rewindBtn.addEventListener("click", () => {
+    audio.currentTime -= 10;
+});
+
+/* Forward 10 sec */
+forwardBtn.addEventListener("click", () => {
+    audio.currentTime += 10;
+});
+
+playPauseBtn.addEventListener("click", togglePlay);
+
+/* Volume control */
+volumeSlider.addEventListener("input", () => {
+    audio.volume = volumeSlider.value;
+});
+
+/* Reset at end */
+audio.addEventListener("ended", () => {
+    playPauseBtn.textContent = "play_arrow";
+    progress.style.width = "0%";
+});
+</script>
+</body>
+</html>

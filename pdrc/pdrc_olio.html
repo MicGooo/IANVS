@@ -1,0 +1,187 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="../image/favicon.ico" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../CSS/giano.css">
+    <link rel="stylesheet" href="../CSS/player.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Azienda Agricola IANVS</title>
+</head>
+<body>
+<header>
+  <img src="../image/Logo New 2025.jpg"  alt="Seggiano" class="responsive-img" />
+</header>
+<div class="container">
+<div class="flex-container">
+<div>
+    <h2>Produzione di Olio Extra Vergine di Oliva</h2>
+   <div class="imgbox">
+    <img src="../Image/EU_Emblem.png" alt="Giano 2010">
+    <span class="imglegend">
+        Museo ristrutturato con co-finanziamento Progetto PNRR 
+        <a href="https://commission.europa.eu/strategy-and-policy/recovery-plan-europe_it" target="_blank">
+            Next Generation EU
+        </a>, ID 9007.
+    </span>
+</div><p>La coltivazione dell’olivo in Italia ha una storia millenaria, intrecciata con la vita quotidiana, la cucina e il paesaggio del Paese. L’olivo è una pianta resistente, capace di crescere su terreni aridi e collinari, e per questo ha trovato un ambiente ideale nelle regioni del Centro e del Sud, ma anche in alcune aree del Nord. Le colline terrazzate, i muretti a secco e i piccoli uliveti familiari rappresentano ancora oggi un tratto distintivo del panorama rurale italiano.</p>
+<p>La cura degli ulivi richiede pazienza e attenzione durante tutto l’anno. In primavera gli alberi vengono potati per favorire la crescita dei nuovi rami produttivi. Durante l’estate, il terreno viene tenuto pulito e areato per garantire la salute delle radici. Gli ulivi sono piante longeve, e molti esemplari secolari continuano a essere produttivi, rappresentando una vera eredità agricola.</p>
+<p>La raccolta delle olive è un momento centrale, che un tempo coinvolgeva intere famiglie e comunità. Avviene generalmente tra ottobre e dicembre, a seconda della varietà e del clima. Le olive possono essere raccolte a mano, tramite teli stesi a terra e leggera bacchiatura dei rami, oppure con piccoli strumenti meccanici che facilitano il distacco dei frutti senza danneggiare la pianta. La rapidità è fondamentale: le olive devono essere lavorate entro poche ore per preservare la qualità dell’olio.</p>
+<p>Il processo di estrazione avviene nel frantoio. Dopo essere state lavate e separate dalle foglie, le olive vengono frante fino a ottenere una pasta densa e profumata. A questo punto, mediante tecniche moderne di centrifugazione, si separano l’olio, l’acqua e la parte solida. Nasce così l’olio extravergine d’oliva, un prodotto che conserva profumi e sapori unici, legati alla varietà delle olive e alle caratteristiche del territorio.</p>
+<p>L’olio italiano è famoso per la sua grande diversità: ogni regione ha le sue cultivar e i suoi aromi caratteristici, dalle note fruttate e leggere degli oli liguri, ai sapori più intensi e piccanti di quelli pugliesi e calabresi. Ogni bottiglia porta con sé un pezzo di storia del territorio da cui proviene.</p>
+
+<!-- audio player -->
+</div>
+</div>
+<div class="flex-container">
+
+    <div class="center-wrapper">
+<div class="player1">
+<h2>Percorso didattico ricreativo: <br>dall’oliva all’olio</h2>
+    <!-- TRACK LIST -->
+    <div id="trackList">
+        <div class="track" data-src="../audio/1_Raccolta.mp3">1. Raccolta <span class="material-icons">music_note</span></div>
+        <div class="track" data-src="../audio/2_molitura.mp3">2. Molitura<span class="material-icons">music_note</span></div>
+        <div class="track" data-src="../audio/3_Pressatura.mp3">3. Pressatura <span class="material-icons">music_note</span></div>
+        <div class="track" data-src="../audio/4_Separazione.mp3">4. Separazione olio-acqua<span class="material-icons">music_note</span></div>
+        <div class="track" data-src="../audio/5_Conservazione.mp3">5. Conservazione<span class="material-icons">music_note</span></div>
+    </div>
+
+    <!-- PLAYER SECTION -->
+    <div class="player">
+        <div class="controls">
+            <span class="material-icons" id="rewind">fast_rewind</span>
+            <span class="material-icons" id="playPause">play_arrow</span>
+            <span class="material-icons" id="forward">fast_forward</span>
+        </div>
+
+        <div class="progress-container" id="progressContainer">
+            <div class="progress1" id="progress"></div>
+        </div>
+
+        <div class="time">
+            <span id="currentTime">0:00</span>
+            <span id="duration">0:00</span>
+        </div>
+
+        <div class="volume">
+            <span class="material-icons">volume_up</span>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+        </div>
+    </div>
+    <audio id="audio"></audio>
+
+    
+</div>
+</div>
+</div>
+
+</div>
+
+<footer>
+<h3>Azienda Agricola IANVS <br>Seggiano di Giano dell'Umbria, Perugia</h3>
+<img src="../image/IANVS white logo.png" alt="AI IANVS logo" height="100px" />
+<p><img src="../image/MailW.png" alt="Mail" height="16px"/> Azienda Agricola IANVS<br>Largo S. Di Giacomo 11<br>06100 Perugia</p>
+<p><img src="../image/PhoneW.png" alt="Phone" height="16px"/> +39 075 31654</p>
+<p><img src="../image/EmailW.png" alt="E-mail" height="16px"/> ianvs@registerpec.it</p>
+<img src="../image/IANVS Coin w.png" alt="AI IANVS logo" height="150px" />
+<p>Copyright 2010-2025 | <a style="color: white" href="../Privacy/Index.html">Privacy Policy</a> | Updated: <span id="lastModified"></span></p>
+</footer>
+<script src="../CSS/main.js"></script>
+<script>
+const audio = document.getElementById("audio");
+const tracks = document.querySelectorAll(".track");
+const playPauseBtn = document.getElementById("playPause");
+const rewindBtn = document.getElementById("rewind");
+const forwardBtn = document.getElementById("forward");
+const progress = document.getElementById("progress");
+const progressContainer = document.getElementById("progressContainer");
+const currentTimeEl = document.getElementById("currentTime");
+const durationEl = document.getElementById("duration");
+const volumeSlider = document.getElementById("volume");
+
+let currentTrack = null;
+
+/* Format time  00:00  */
+function formatTime(sec) {
+    const m = Math.floor(sec / 60) || 0;
+    const s = Math.floor(sec % 60) || 0;
+    return `${m}:${s.toString().padStart(2, '0')}`;
+}
+
+/* Play / pause */
+function togglePlay() {
+    if (audio.paused) {
+        audio.play();
+        playPauseBtn.textContent = "pause";
+    } else {
+        audio.pause();
+        playPauseBtn.textContent = "play_arrow";
+    }
+}
+
+/* Track selection */
+tracks.forEach(track => {
+    track.addEventListener("click", () => {
+
+        if (currentTrack === track) {
+            togglePlay();
+            return;
+        }
+
+        if (currentTrack) currentTrack.classList.remove("active");
+
+        currentTrack = track;
+        track.classList.add("active");
+
+        audio.src = track.dataset.src;
+        audio.play();
+        playPauseBtn.textContent = "pause";
+    });
+});
+
+/* Update progress bar */
+audio.addEventListener("timeupdate", () => {
+    const percent = (audio.currentTime / audio.duration) * 100;
+    progress.style.width = percent + "%";
+    currentTimeEl.textContent = formatTime(audio.currentTime);
+});
+
+/* Set duration */
+audio.addEventListener("loadedmetadata", () => {
+    durationEl.textContent = formatTime(audio.duration);
+});
+
+/* Seek */
+progressContainer.addEventListener("click", (e) => {
+    const width = progressContainer.clientWidth;
+    const clickX = e.offsetX;
+    const ratio = clickX / width;
+    audio.currentTime = ratio * audio.duration;
+});
+
+/* Rewind 10 sec */
+rewindBtn.addEventListener("click", () => {
+    audio.currentTime -= 10;
+});
+
+/* Forward 10 sec */
+forwardBtn.addEventListener("click", () => {
+    audio.currentTime += 10;
+});
+
+playPauseBtn.addEventListener("click", togglePlay);
+
+/* Volume control */
+volumeSlider.addEventListener("input", () => {
+    audio.volume = volumeSlider.value;
+});
+
+/* Reset at end */
+audio.addEventListener("ended", () => {
+    playPauseBtn.textContent = "play_arrow";
+    progress.style.width = "0%";
+});
+</script>
+</body>
+</html>
