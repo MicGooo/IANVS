@@ -7,7 +7,7 @@
     "Contatto": "<h2>IANVS Extra Virgin Olive Oil DOP</h2>\n \n<img src=\"../Image/IANVS_bottle.jpg\" class=\"responsive-img2\" alt=\"Olio di IANVS\"/></figure>\n<p>IANVS Extra Virgin Olive Oil produced by the farm is strictly controlled at every single step of the cultivation and harvesting. The olives come from cultivars of Moraiolo Leccino, Frantoio and San Felice, grown in full compliance with EU directive 2078/92.</p>\n\n<p>Immediately after harvesting by hand, the olives are milled using hammer mills and the extraction is performed by centrifugation.</p>\n<p>The chemical composition and nutritional characteristics are guaranteed by IANVS oil DOP Umbria Colli Martani. IANVS Extra Virgin Olive Oil is very low in free acidity (&lt;0.5%), has high levels of oleic acid (&gt;75%) and low levels of polyunsaturated (&lt;7%) and saturated fatty acids (&lt;12%). Of particular importance is the high content of antioxidants such as polyphenols. Each year, the best time to harvest is chosen in order to ensure the highest possible content in these components which are so vital to the health of consumers.</p>\n<p>Unless otherwise requested, IANVS extra virgin olive oil is bottled without prior filtration, in order to preserve the high content of natural antioxidants.</p>\n<p>To ensure the highest level of quality, IANVS extra virgin olive oil is sold in dark bottles to avoid the detrimental effect of light on the preservation of the product.</p><p>Since the IANVS Extra Virgin Olive Oil is bottled specifically for you upon receipt of the order, a minimum of 7 working days is needed for the preparation of the product to be shipped. Upon receipt of bank transfer we will advice you of the anticipated delivery date.</p><h3>The Farm Azienda Agricola IANVS</h3><p>Azienda Agricola IANVS, Seggiano di Giano dell'Umbria, Perugia, Italy.</p>",
     "Contact": "Shop",
     "Visit": "Impressions",
-    "Museo": "Museum",
+    "Museo": "Visit",
     "about": "About us",
     "MuseoTXT": "Currently only available in Italian."
   },
@@ -20,7 +20,7 @@
     "Contact": "Shop",
     "Visit": "Azienda",
     "about": "Chi Siamo",
-    "Museo": "Museo",
+    "Museo": "Percorso Didattico",
     "MuseoTXT": ""
   },
 
@@ -33,7 +33,7 @@
     "Contact": "Shop",
     "Visit": "Eindrücke",
     "about": "Über uns",
-    "Museo": "Museum",
+    "Museo": "Besuch",
     "MuseoTXT": "Derzeit nur auf Italienisch verfügbar."
   },
   "da": {
@@ -45,7 +45,7 @@
     "Contact": "Shop",
     "Visit": "Indtryk",
     "about": "Om os",
-    "Museo": "Museum",
+    "Museo": "Besøg",
     "MuseoTXT": "I øjeblikket kun tilgængelig på italiensk."
   }
 }
