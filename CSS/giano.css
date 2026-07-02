@@ -280,3 +280,29 @@ div.flex-container > div {
     max-width: 100%;
   }
 }
+/* Grid Layouts for museum */
+.grid4 {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+}
+
+.grid3 {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+
+.grid2 {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
+
+@media (max-width:768px) {
+    .grid4,
+    .grid3,
+    .grid2 {
+        grid-template-columns:1fr;
+    }
+}
