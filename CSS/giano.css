@@ -281,12 +281,6 @@ div.flex-container > div {
   }
 }
 /* Grid Layouts for museum */
-.grid4 {
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:10px;
-}
-
 .grid3 {
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -300,7 +294,6 @@ div.flex-container > div {
 }
 
 @media (max-width:768px) {
-    .grid4,
     .grid3,
     .grid2 {
         grid-template-columns:1fr;
